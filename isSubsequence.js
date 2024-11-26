@@ -5,6 +5,6 @@ var isSubsequence = function (s, t) {
             index++
         }
     }
-    return index.length === s.length
+    return index === s.length
 };
 console.log(isSubsequence("acb", "ahbgdc"))
