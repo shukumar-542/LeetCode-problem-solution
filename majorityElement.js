@@ -12,7 +12,7 @@ var majorityElement = function(nums) {
         }
 
     }
-    console.log(key);
+    console.log(Number(key));
 };
 
 majorityElement([3,3,4])
