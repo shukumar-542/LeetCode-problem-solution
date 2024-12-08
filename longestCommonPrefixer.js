@@ -1,3 +1,15 @@
+/**
+
+
+ 1. if array length 0 then return empty string
+ 2. sort array
+ 3. take largest and smallest word
+ 4. loop smallest array and compare two word and return
+ 
+ */
+
+
+
 var longestCommonPrefix = function(strs) {
     if(strs.length === 0){
         return ""
