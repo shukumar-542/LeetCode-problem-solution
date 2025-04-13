@@ -1,18 +1,26 @@
-var strStr = function(haystack, needle) {
-    // console.log(haystack);
-    // console.log(needle.length);
-    let index = 0
-    for(let i = 0 ; i<haystack.length ; i++){
-        for(let j = 0 ; j<needle.length ; j++){
-            console.log(needle[j]);
-            if(needle[j] === haystack[i]){
-                
+var strStr = function (haystack, needle) {
+
+    const comapireString = (str1, str2, index) => {
+        let incementIndex = index;
+        if(str2.lenght < index){
+            return false;
+        }
+        for (let i = 0; i < str2.length; i++) {
+            if(str2[i] != str1[incementIndex]){
+                return false
+            }else{
+                incementIndex++
+            }
+        }
+        return true
+    }
+    for (let i = 0; i < haystack.length; i++) {
+        if (haystack[i] === needle[0]) {
+            if(comapireString(haystack, needle, i) == true){
+                console.log(i)
             }
         }
     }
 
-    
 };
-strStr("sadbutsad" ,"sad")
-"leeto"
-"leetcode"
+strStr("mississippi", "issip")
