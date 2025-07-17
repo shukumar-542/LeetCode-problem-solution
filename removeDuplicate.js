@@ -7,12 +7,11 @@ var removeDuplicates = function(nums) {
             index ++
         }
 
-        console.log(nums);
 
 
     }
     return index
 };
 
-const result = removeDuplicates([1,1,2,2,3])
+const result = removeDuplicates([1,1,2,3])
 console.log(result);
