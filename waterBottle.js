@@ -10,6 +10,6 @@ var numWaterBottles = function(numBottles, numExchange) {
 
 };
 
-const result = numWaterBottles(15, 4) // 13
+const result = numWaterBottles(15, 4) 
 
 console.log(result)
