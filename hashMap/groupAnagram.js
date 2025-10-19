@@ -19,4 +19,5 @@ var groupAnagrams = function (strs) {
     return Array.from(map.values());
 };
 
+
 const value = groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"])
