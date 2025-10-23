@@ -7,7 +7,6 @@ var plusOne = function(digits) {
 
     
     let result = String(addOne).split('').map(Number)
-    console.log(result)
 
     return result
 
