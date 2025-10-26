@@ -8,23 +8,45 @@
 
 const valid = (s) => {
     const checker = []
+
+    if(s.length % 2 != 0){
+        return false
+    }
     for (let char of s) {
         
         if (char === "{" || char === "(" || char === "[") {
             checker.push(char)
             
-        }else{
-            if(char === ")" || char === "]" || char === "}"){
-                checker.pop()
+        }else if(char == ")"){
+
+            let value = checker.pop()
+            if(value !== "("){
+                return false
             }
-            console.log(checker);
-            return (checker.length === 0);
+        }else if(char == "}"){
+
+            let value = checker.pop()
+            if(value !== "{"){
+                return false
+            }
+        }else if(char == "]"){
+
+            let value = checker.pop()
+
+            if(value !== "["){
+                return false
+            }
         }
         
+        
+        
     }
+    return checker.length === 0;
+
+    
 
 }
-
-console.log(valid("(]"));
+// valid("(]")
+console.log(valid("()"));
 
 
