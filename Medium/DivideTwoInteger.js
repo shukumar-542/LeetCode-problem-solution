@@ -10,7 +10,7 @@ var divide = function(dividend, divisor) {
     const result = dividend / divisor;
     console.log(result)
 
-    return Math.floor(result)
+    return Math.trunc(result)
     
 };
 divide(-2147483648 , -1)
