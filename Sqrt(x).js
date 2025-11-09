@@ -6,3 +6,8 @@ var mySqrt = function(x) {
 };
 
 console.log(mySqrt(8)) 
+
+
+const arr = [1,2,3,4]
+
+console.log( "a",arr.reduce((a , b)=>  a + b, 0))
