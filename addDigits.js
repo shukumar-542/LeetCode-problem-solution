@@ -9,7 +9,6 @@ var addDigits = function (num) {
     return digit
 
 
-    console.log(digit)
 
 };
 addDigits(0)
