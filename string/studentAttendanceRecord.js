@@ -27,14 +27,14 @@ var checkRecord = function(s) {
             late = 0
         }
 
-    }
-
-    if(abset >= 2 || late >= 3) {
+        
+        if(abset >= 2 || late >= 3) {
             return false;
         }
+    }
     return true
 
     // console.log(abset , late)
 };
 
-console.log(checkRecord("PPALLP"))
+console.log(checkRecord("LLLALL"))
