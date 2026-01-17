@@ -10,8 +10,9 @@ var uncommonFromSentences = function (s1, s2) {
     }
 
     let result = Object.keys(countWord).filter(key =>countWord[key]  === 1)
-    console.log(result)
+   return result
     
 
-};
+}
+
 uncommonFromSentences("this apple is sweet", "this apple is sour")
